@@ -17,6 +17,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/moment.min.js"></script>
 
     
     <!-- Bootstrap Core CSS -->
@@ -75,13 +76,13 @@
         <div ng-controller="dateController" class="row" >
             <div class="col-lg-12">
                 <div class="col-md-12">
-                    <a href="#" class="btn btn-success  btn-lg">
+                    <a href="#" class="btn btn-success btn-lg" ng-click="before()">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
                     
-                    <span class="dateformat">{{dateqq}}</span>
+                    <strong class="dateformat">&nbsp;{{dateAtual}}&nbsp;</strong>
                     
-                    <a href="#" class="btn btn-success  btn-lg pull-right">
+                    <a href="#" class="btn btn-success btn-lg pull-right" ng-click="after()">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
