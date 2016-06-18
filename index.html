@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp">
 
 <head>
 
@@ -11,6 +11,14 @@
 
     <title>IT Dashboard</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+    <script src="js/angular.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -64,34 +72,25 @@
     <div class="container">
 
         <!-- Page Header -->
-        <div class="row">
+        <div ng-controller="dateController" class="row" >
             <div class="col-lg-12">
-                
-                
-                
-                <div class="col-md-4 portfolio-item">
-
-                </div>
-                
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-12">
                     <a href="#" class="btn btn-success  btn-lg">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
-                    <a>
-                        <span>aaaa</span>
-                    </a>
+                    
+                    <span class="dateformat">{{dateqq}}</span>
+                    
                     <a href="#" class="btn btn-success  btn-lg pull-right">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
-                
-                <div class="col-md-4 portfolio-item">
-
-                </div>
+              
             </div>
+            
         </div>
         <!-- /.row -->
-
+        <hr>
         
         <!-- Projects Row -->
         <div class="row">
@@ -99,19 +98,11 @@
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
