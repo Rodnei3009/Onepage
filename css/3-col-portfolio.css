@@ -17,7 +17,7 @@ footer {
 }
 
 .dateformat {
-    font-size: 25px;
+    font-size: 20px;
     
 }
 
@@ -29,9 +29,20 @@ footer {
     margin-right: 5px;
     margin-bottom: 25px;
     margin-top: 25px;
+    
+}
+
+.divblock.divblue {
     background-color: blue;
 }
 
+.divblock.divgreen {
+    background-color: green;
+}
+
+.divblock.divred {
+    background-color: #d5080f;
+}
 
 .divblock .divicon {
     position: absolute;
@@ -54,8 +65,6 @@ footer {
     margin-bottom: 25px;
     margin-right: 25px;
 }
-
-
 
 .divblock .divdirupper {
     position: relative;
