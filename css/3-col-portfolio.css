@@ -17,15 +17,15 @@ footer {
 }
 
 .dateformat {
-    font-size: 20px;
-    
+    position: relative;
+    font-size: 20px;    
 }
 
 .divblock {
     height: 150px;
     background-color: #D0D0D0;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 25px;
     margin-top: 5px;
     
@@ -84,4 +84,37 @@ footer {
     padding-top: 15px;
     color: white;
 }
+
+/* ANIMATIONS
+============================================================================= */
+
+.page.ng-leave  { z-index:9999; }
+.page.ng-enter  { z-index:8888; }
+
+/* page specific animations ------------------------ */
+
+/* daily -------------------------- */
+.page-daily.ng-leave         {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;
+    
+    /*-webkit-transform-origin: 0% 0%;
+    -webkit-animation: rotateFall 1s both ease-in;
+    -moz-transform-origin: 0% 0%;
+    -moz-animation: rotateFall 1s both ease-in;
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;*/
+}
+.page-daily.ng-enter         {  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in; 
+    
+    /*-webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;*/    
+}
+
+
 
