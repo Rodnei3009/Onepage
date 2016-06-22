@@ -6,30 +6,28 @@
     <br>
     
     <!-- Page Header -->
-    <div ng-controller="dateController" class="row" >
-        <div class="col-lg-12">
-            <div class="block-center text-center align-center col-sm-12">
-                <a class="btn btn-success btn-lg pull-left" ng-click="before()">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
+    <div ng-controller="dateController" class="row col-sm-12" >
+        <div class="block-center text-center align-center">
+            <a class="btn btn-success btn-lg" ng-click="before()">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
 
-                <span class="dateformat">
-                    <strong>&nbsp;{{monthAtual}}&nbsp;</strong>
-                </span>
+            <span class="dateformat">
+                <strong>&nbsp;{{dateAtual}}&nbsp;</strong>
+            </span>
 
-                <a class="btn btn-success btn-lg pull-right" ng-click="after()">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
-        </div>
+            <a class="btn btn-success btn-lg" ng-click="after()">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>        
+
     </div>
     <!-- /.row -->
 
-    <hr>
-
     <!-- Projects Row -->
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row col-sm-12">
+        <hr>
+        <div class="col-sm-4">
             <div class="divblock divblue">
                 <div class="divicon">
                     <div class="font-icon">
@@ -37,7 +35,7 @@
                     </div>
                 </div>
                 <div class="divdirupper">
-                    <span>95%</span>
+                    <span>98%</span>
                     <hr>
                 </div>
 
@@ -47,7 +45,7 @@
             </div>
         </div>    
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <div class="divblock divred">
                 <div class="divicon">
                     <div class="font-icon">
@@ -55,7 +53,7 @@
                     </div>
                 </div>
                 <div class="divdirupper">
-                    <span>5%</span>
+                    <span>3%</span>
                     <hr>
                 </div>
 
@@ -65,7 +63,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <div class="divblock divgreen">
                 <div class="divicon">
                     <div class="font-icon">
@@ -73,7 +71,7 @@
                     </div>
                 </div>
                 <div class="divdirupper">
-                    <span>555</span>
+                    <span>324</span>
                     <hr>
                 </div>
 
@@ -85,15 +83,12 @@
 
     </div>
     <!-- /.row -->
-
-    <hr>
-
+    
     <!-- Footer -->
     <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
-            </div>
+        <div class="row col-sm-12">
+            <hr>
+            <p>Copyright &copy; Your Website 2014</p>
         </div>
         <!-- /.row -->
     </footer>
