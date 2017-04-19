@@ -100,7 +100,7 @@
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
-        <div class="col-md-6">
+        <div class="col-md-4">
           <!-- MAP & BOX PANE -->
           
           <!-- TABLE: LATEST ORDERS -->
@@ -123,9 +123,9 @@
                     <th>Código</th>
                     <th>Desc.</th>
                     <th>Status</th>
-                    <!--
-                    <th>Última NF</th>
-                    -->
+                    
+                    <th>TME</th>
+                    
                   </tr>
                   </thead>
                   <tbody>
@@ -133,46 +133,59 @@
                     <td>BR12</td>
                     <td>F. Cebrasa</td>
                     <td><span class="label label-success">Normal</span></td>
-                    <!--
+                    
                     <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">18/04/2017 15:35:21</div>
+                      <span id="normalline">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
                     </td>
-                    -->
+                    
                   </tr>
                   <tr>
                     <td>BR16</td>
                     <td>F. Jacareí</td>
                     <td><span class="label label-success">Normal</span></td>
+                    <td>
+                      <span id="normalline1">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>  
                   </tr>
                   <tr>
                     <td>BR25</td>
                     <td>F. Contagem</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
+                    <td><span class="label label-danger">Conting.</span></td>
+                    <td>
+                      <span id="normalline2">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>BR31</td>
                     <td>F. Pernambuco</td>
                     <td><span class="label label-success">Normal</span></td>
-                    
+                    <td>
+                      <span id="normalline3">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>BR35</td>
                     <td>F. Guarulhos</td>
                     <td><span class="label label-success">Normal</span></td>
-                    
+                    <td>
+                      <span id="normalline4">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>BR33</td>
                     <td>F. Jundiai</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
+                    <td><span class="label label-danger">Conting.</span></td>
+                    <td>
+                      <span id="normalline5">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>BR40</td>
                     <td>F. Piraí</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
+                    <td><span class="label label-danger">Conting.</span></td>
+                    <td>
+                      <span id="normalline6">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span>
+                    </td>
                   </tr>
                   </tbody>
                 </table>
@@ -186,90 +199,7 @@
         <!-- /.col -->
 
         
-        <div class="col-md-6">
-          <!-- MAP & BOX PANE -->
-          
-          <!-- TABLE: LATEST ORDERS -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">T.M.E</h3>
-			  	
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <thead>
-                  <tr>
-                    <th>Código</th>
-                    <th>Desc.</th>
-                    <th>TME</th>
-                    <!--
-                    <th>Última NF</th>
-                    -->
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>BR12</td>
-                    <td>F. Cebrasa</td>
-                    <td><span id="normalline">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span></td>
-                    <!--
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">18/04/2017 15:35:21</div>
-                    </td>
-                    -->
-                  </tr>
-                  <tr>
-                    <td>BR16</td>
-                    <td>F. Jacareí</td>
-                    <td><span id="compositebar">4,6,7,7,4,3,2,1,4</span></td>
-                  </tr>
-                  <tr>
-                    <td>BR25</td>
-                    <td>F. Contagem</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>BR31</td>
-                    <td>F. Pernambuco</td>
-                    <td><span class="label label-success">Normal</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>BR35</td>
-                    <td>F. Guarulhos</td>
-                    <td><span class="label label-success">Normal</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>BR33</td>
-                    <td>F. Jundiai</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td>BR40</td>
-                    <td>F. Piraí</td>
-                    <td><span class="label label-danger">Contingência</span></td>
-                    
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->  
+        
           
       </div>
       <!-- /.row -->
@@ -723,6 +653,21 @@
     // Line charts with normal range marker
     $('#normalline').sparkline('html',
         {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
+      
+    $('#normalline1').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
+    $('#normalline2').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
+    $('#normalline3').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
+    $('#normalline4').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});  
+    $('#normalline5').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
+    $('#normalline6').sparkline('html',
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});  
+      
+      
     $('#normalExample').sparkline('html',
         {fillColor: false, normalRangeMin: 80, normalRangeMax: 95, normalRangeColor: '#4f4'});
 
