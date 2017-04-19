@@ -208,7 +208,7 @@
                   <tr>
                     <th>Código</th>
                     <th>Desc.</th>
-                    <th>Status</th>
+                    <th>TME</th>
                     <!--
                     <th>Última NF</th>
                     -->
@@ -218,7 +218,7 @@
                   <tr>
                     <td>BR12</td>
                     <td>F. Cebrasa</td>
-                    <td><span id="normalline">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span></td>
+                    <td><span id="normalline">8,4,0,0,0,0,1,4,4,8,8,10,10,0,0,0,4,6,5,9,10</span></td>
                     <!--
                     <td>
                       <div class="sparkbar" data-color="#00a65a" data-height="20">18/04/2017 15:35:21</div>
@@ -722,7 +722,7 @@
 
     // Line charts with normal range marker
     $('#normalline').sparkline('html',
-        {fillColor: false, normalRangeMin: -1, normalRangeMax: 8});
+        {fillColor: false, normalRangeMin: 0, normalRangeMax: 5});
     $('#normalExample').sparkline('html',
         {fillColor: false, normalRangeMin: 80, normalRangeMax: 95, normalRangeColor: '#4f4'});
 
